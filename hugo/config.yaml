@@ -1,0 +1,77 @@
+baseURL: "http://gerohillebrandt.de"
+languageCode: "en-us"
+title: "gerohillebrandt.de"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+googleAnalytics: G-J0TZ0JKV8E
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+menu:
+  main:
+    - identifier: search
+      name: search
+      url: /search
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: archive
+      name: archive
+      url: /archives
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+params:
+  env: production
+  author: "Gero Hillebrandt"
+  description: "The personal website of Gero Hillebrandt"
+  keywords: [Blog, Portfolio]
+
+  # theme params
+  defaultTheme: auto
+  homeInfoParams:
+    Title: Hello visitor!
+    Content: |
+      My name is Gero Hillebrandt, I live in Germany and hold an B.Sc. in Physics
+      and an M.Sc. in Business Mathematics from the MLU Halle-Wittenberg.
+      I am mainly interested in the various challenges of software development, ML/AI and
+      quantitative finance.
+
+      This blog is a fun project where I automated daily summaries about the field of AI.
+      Any future manual posts will be tagged with ["by gh"](/tags/by-gh).
+      See [this post](/posts/ai-auto-blog/) for more details.
+
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+
+  assets:
+    favicon16x16: "favicon.png"
+    favicon32x32: "favicon.png"
+    apple_touch_icon: "favicon.png"
+
+  socialIcons:
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/gerohillebrandt/"
+    - name: "github"
+      url: "https://github.com/ghillb"
+    - name: "email"
+      url: "mailto:gero.hillebrandt.pm@gmail.com"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
