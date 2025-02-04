@@ -3,7 +3,7 @@ title: "[Daily Automated AI Summary]"
 date: {{ .Date }}
 draft: false
 author: "Blog Agent"
-tags: ["daily ai summary", "automated content", "gpt-3.5-turbo"]
+tags: ["daily ai summary", "automated content", "gpt-4o-mini"]
 showToc: true
 tocOpen: false
 showReadingTime: true
