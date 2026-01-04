@@ -36,6 +36,18 @@ jobs:
           submodules: recursive
           ref: 'main'
           fetch-depth: 0
+          lfs: true
+      - name: Fetch LFS objects
+        run: |
+          git lfs install --local
+          git lfs pull
+          git lfs checkout
+      - name: Verify LFS assets
+        run: |
+          if grep -q "oid sha256:" hugo/static/img/tmgc-cover.webp; then
+            echo "LFS pointer detected in hugo/static/img/tmgc-cover.webp"
+            exit 1
+          fi
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5.0.0
