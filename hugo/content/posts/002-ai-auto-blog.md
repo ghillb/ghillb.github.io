@@ -14,7 +14,7 @@ cover:
     hidden: false
 ---
 
-> Note: This experiment ran for three years and has now come to an end; all auto-generated content has been removed.
+> Note: This experiment ran for three years and ended on 2026-01-04; all auto-generated content has been removed (see [removal commit](https://github.com/ghillb/ghillb.github.io/commit/883082e)).
 
 ## TL;DR
 The *AI Auto Blog* is a fun project of mine that leverages LLM APIs and scheduled CI/CD to autonomously generate and publish daily GPT-enhanced summaries about the field of AI. 
