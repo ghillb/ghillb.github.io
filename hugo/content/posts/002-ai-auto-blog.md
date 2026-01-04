@@ -14,6 +14,8 @@ cover:
     hidden: false
 ---
 
+> Note: This experiment ran for three years and has now come to an end; all auto-generated content has been removed.
+
 ## TL;DR
 The *AI Auto Blog* is a fun project of mine that leverages LLM APIs and scheduled CI/CD to autonomously generate and publish daily GPT-enhanced summaries about the field of AI. 
 

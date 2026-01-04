@@ -46,10 +46,6 @@ params:
       I am mainly interested in the various challenges of software development, ML/AI and
       quantitative finance.
 
-      This blog is a fun project where I automated daily summaries about the field of AI.
-      Any future manual posts will be tagged with ["by gh"](/tags/by-gh).
-      See [this post](/posts/ai-auto-blog/) for more details.
-
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
